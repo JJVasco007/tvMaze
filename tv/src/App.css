@@ -1,0 +1,32 @@
+.c-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px;
+  width: 100%;
+  padding: 10px 6px;
+  background: #fff;
+  border-top: 1px solid #e1e6ed;
+}
+
+.c-menu a {
+  padding: 8px 10px;
+  border-radius: 999px;
+  color: #5b6472;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.c-menu a:hover {
+  background: #eef2f8;
+}
+
+.c-menu a.active {
+  background: #286cdb;
+  color: #fff;
+}

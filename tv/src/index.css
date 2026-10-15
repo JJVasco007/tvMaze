@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f7fa;
+  color: #202632;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  padding-bottom: 80px;
+}
+
+a {
+  color: #286cdb;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid #286cdb;
+  outline-offset: 2px;
+}
+
+.pagina {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 16px 24px;
+}
+
+.pagina h1 {
+  margin-bottom: 4px;
+  font-size: 1.6rem;
+}
+
+.pagina p + p {
+  margin-top: 10px;
+}
+
+.texto-suave {
+  color: #6b7482;
+  font-size: 0.9rem;
+}
+
+.mensaje {
+  padding: 24px 16px;
+  color: #6b7482;
+  text-align: center;
+}

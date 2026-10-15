@@ -1,0 +1,115 @@
+.pagina.serie {
+  max-width: 720px;
+}
+
+.boton-volver {
+  margin-bottom: 16px;
+  padding: 6px 14px;
+  border: 1px solid #d5dbe4;
+  border-radius: 999px;
+  background: #fff;
+  color: #3a4350;
+  cursor: pointer;
+}
+
+.boton-volver:hover {
+  border-color: #286cdb;
+  color: #286cdb;
+}
+
+.serie-ficha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.serie-poster {
+  width: 210px;
+  max-width: 100%;
+  aspect-ratio: 210 / 295;
+  border-radius: 14px;
+  object-fit: cover;
+  background: #e8ecf2;
+}
+
+.serie-info {
+  flex: 1 1 240px;
+}
+
+.serie-info h1 {
+  margin-bottom: 6px;
+}
+
+.serie-puntaje {
+  color: #b5760b;
+  font-weight: 700;
+}
+
+.serie-generos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.serie-generos li {
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: #e5eefc;
+  color: #1d57b7;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.boton-favorito {
+  margin-top: 8px;
+  padding: 10px 16px;
+  border: 1px solid #d5dbe4;
+  border-radius: 12px;
+  background: #fff;
+  color: #202632;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boton-favorito:hover {
+  border-color: #286cdb;
+}
+
+.serie-resumen {
+  margin-top: 20px;
+  max-width: 65ch;
+  color: #3a4350;
+}
+
+.serie-datos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.serie-datos div {
+  padding: 10px 14px;
+  border: 1px solid #e1e6ed;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.serie-datos dt {
+  color: #6b7482;
+  font-size: 0.8rem;
+}
+
+.serie-datos dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.serie-enlace {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 600;
+}

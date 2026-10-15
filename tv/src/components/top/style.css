@@ -1,0 +1,109 @@
+.pagina.top {
+  max-width: 48rem;
+}
+
+.top-generos {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-bottom: 0.4rem;
+  overflow-x: auto;
+}
+
+.top-generos button {
+  flex: 0 0 auto;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid #d5dbe4;
+  border-radius: 999px;
+  background: #fff;
+  color: #3a4350;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.top-generos button:hover {
+  border-color: #286cdb;
+  color: #286cdb;
+}
+
+.top-generos button.activo {
+  border-color: #286cdb;
+  background: #286cdb;
+  color: #fff;
+}
+
+.top-lista {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top-fila {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 2.5vw, 1rem);
+  padding: 0.6rem clamp(0.6rem, 2.5vw, 1rem) 0.6rem 0.6rem;
+  border: 1px solid #e1e6ed;
+  border-radius: 14px;
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.15s;
+}
+
+.top-fila:hover {
+  border-color: #286cdb;
+}
+
+.top-posicion {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #eef2f8;
+  color: #5b6472;
+  font-weight: 700;
+}
+
+.top-lista li:nth-child(-n + 3) .top-posicion {
+  background: #286cdb;
+  color: #fff;
+}
+
+.top-poster {
+  flex: 0 0 auto;
+  width: clamp(3.5rem, 14vw, 5rem);
+  aspect-ratio: 210 / 295;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #e8ecf2;
+}
+
+.top-datos {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.top-nombre {
+  font-weight: 600;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.top-detalle {
+  margin-top: 2px;
+  color: #6b7482;
+  font-size: 0.85rem;
+}
+
+.top-puntaje {
+  flex: 0 0 auto;
+  color: #b5760b;
+  font-weight: 700;
+}

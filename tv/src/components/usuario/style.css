@@ -1,0 +1,25 @@
+.usuario-cifras {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.usuario-cifras p {
+  margin: 0;
+  padding: 16px;
+  border: 1px solid #e1e6ed;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.usuario-cifras strong {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+.usuario-cifras span {
+  color: #6b7482;
+  font-size: 0.9rem;
+}

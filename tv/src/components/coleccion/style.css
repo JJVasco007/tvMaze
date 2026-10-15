@@ -1,0 +1,130 @@
+.coleccion {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 16px 24px;
+}
+
+.coleccion-titulo {
+  margin: 0 0 16px;
+  font-size: 1.6rem;
+}
+
+.coleccion-contador {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  margin: 0 0 14px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.coleccion-contador span {
+  color: #7b8492;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.coleccion-boton {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  margin-bottom: 22px;
+  border: 0;
+  border-radius: 12px;
+  background: #286cdb;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.coleccion-boton:active:not(:disabled) {
+  background: #1d57b7;
+}
+
+.coleccion-boton:disabled {
+  background: #aab3c0;
+  cursor: default;
+}
+
+.coleccion-subtitulo {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+.coleccion-nuevas {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.coleccion-nueva {
+  min-width: 0;
+  padding: 10px 6px;
+  border: 1px solid #e1e6ed;
+  border-radius: 14px;
+  background: #fff;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+.coleccion-nueva.repetida {
+  border-color: #e28a8a;
+  background: #fde8e8;
+  color: #8b2020;
+}
+
+.coleccion-nueva img {
+  display: block;
+  width: 84px;
+  aspect-ratio: 210 / 295;
+  margin: 0 auto 6px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.coleccion-nueva p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.coleccion-album {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.coleccion-serie {
+  display: flex;
+  aspect-ratio: 210 / 295;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid #e3e7ed;
+  border-radius: 8px;
+  background: #eceff3;
+  color: #9aa2ad;
+  font-size: 0.7rem;
+}
+
+.coleccion-serie.capturada {
+  border-color: #a8dfc7;
+  background: #e8f7ef;
+}
+
+.coleccion-serie img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 350px) {
+  .coleccion-album {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

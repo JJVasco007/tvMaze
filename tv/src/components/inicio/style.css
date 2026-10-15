@@ -1,0 +1,78 @@
+.c-filtro {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  padding-bottom: 6px;
+  overflow-x: auto;
+}
+
+.c-filtro button {
+  flex: 0 0 auto;
+  padding: 6px 14px;
+  border: 1px solid #d5dbe4;
+  border-radius: 999px;
+  background: #fff;
+  color: #3a4350;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.c-filtro button:hover {
+  border-color: #286cdb;
+  color: #286cdb;
+}
+
+.c-filtro button.activo {
+  border-color: #286cdb;
+  background: #286cdb;
+  color: #fff;
+}
+
+.c-controles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.c-buscador {
+  grid-column: 1 / -1;
+}
+
+.c-controles input,
+.c-controles select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #d5dbe4;
+  border-radius: 12px;
+  background: #fff;
+  color: inherit;
+}
+
+.boton-mas {
+  display: block;
+  min-height: 44px;
+  margin: 24px auto 0;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 12px;
+  background: #286cdb;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.boton-mas:disabled {
+  background: #aab3c0;
+  cursor: default;
+}
+
+@media (min-width: 700px) {
+  .c-controles {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .c-buscador {
+    grid-column: auto;
+  }
+}
